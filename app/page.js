@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Header from './components/Header';
-import LeafletMap from './components/LeafletMap';
+import Map from '@/app/components/Map';
 import { usePositionStore, useResultStore } from './lib/store';
 
 const HomePage = () => {
@@ -39,12 +39,12 @@ const HomePage = () => {
     // } else {
     //   alert('Geolocation not supported by this browser.');
     // }
-  }, []);
+  }, [setPosition, setResult]);
 
   return (
     <div>
       <Header />
-      <LeafletMap />
+      <Map />
     </div>
   );
 };
