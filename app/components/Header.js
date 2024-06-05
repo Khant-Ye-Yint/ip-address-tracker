@@ -3,7 +3,7 @@ import { FaSearch } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <div className=" min-h-[30vh] bg-pattern-mobile md:bg-pattern-desktop bg-no-repeat bg-cover flex flex-col justify-start items-center pt-8 space-y-10 lg:space-y-4">
+    <div className=" min-h-[30vh] bg-pattern-mobile md:bg-pattern-desktop bg-no-repeat bg-cover flex flex-col justify-start items-center pt-8 space-y-10 md::space-y-4 lg:space-y-10">
       <h1 className="text-3xl font-bold text-white ">IP Address Tracker</h1>
       <div className="flex flex-row items-center justify-between w-2/3 overflow-hidden bg-white rounded-md md:w-2/3 lg:w-1/3">
         <input

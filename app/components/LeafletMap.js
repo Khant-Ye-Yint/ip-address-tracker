@@ -9,6 +9,8 @@ const LeafletMap = () => {
     iconSize: [38, 38],
   });
 
+  navigator.geolocation.getCurrentPosition((pos) => console.log(pos));
+
   return (
     <MapContainer
       center={[51.505, -0.09]}

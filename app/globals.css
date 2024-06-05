@@ -12,7 +12,7 @@ body {
 }
 
 .result-container {
-  @apply absolute grid grid-cols-2 lg:grid-cols-11 lg:w-2/3 z-20 mx-4 md:mx-0 gap-2 flex-wrap p-5 bg-white rounded-md top-[18%] md:top-[20%] shadow
+  @apply absolute grid grid-cols-2 lg:grid-cols-11 lg:w-2/3 z-20 mx-4 md:mx-0 gap-2 flex-wrap p-5 bg-white rounded-md top-[18%] md:top-[20%]  shadow
 }
 
 .result-item {
