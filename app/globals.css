@@ -12,11 +12,11 @@ body {
 }
 
 .result-container {
-  @apply absolute grid grid-cols-2 lg:grid-cols-11 lg:w-2/3 z-20 mx-4 md:mx-0 gap-2 flex-wrap p-5 bg-white rounded-md top-[18%] md:top-[20%]  shadow
+  @apply absolute grid grid-cols-1 w-3/4 md:grid-cols-2 lg:grid-cols-11 lg:w-2/3 z-20 md:mx-0 gap-5 lg:gap-0 flex-wrap p-5 bg-white rounded-md top-[18%] md:top-[20%]  shadow
 }
 
 .result-item {
-  @apply flex flex-col items-start justify-start lg:col-span-2
+  @apply flex flex-col items-center md:items-start justify-start lg:col-span-2
 }
 
 .result-header {
@@ -24,7 +24,7 @@ body {
 }
 
 .result-data {
-  @apply text-xl md:text-2xl font-bold
+  @apply text-xl  font-bold
 }
 
 .shadow {
@@ -32,5 +32,5 @@ body {
 }
 
 .map-container {
-  @apply h-[80vh] z-0
+  @apply h-[80vh] w-full z-0
 }
