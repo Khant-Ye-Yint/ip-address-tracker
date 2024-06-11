@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Header from './components/Header';
 import Map from '@/app/components/Map';
 import { usePositionStore, useResultStore } from './lib/store';

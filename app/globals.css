@@ -12,7 +12,7 @@ body {
 }
 
 .result-container {
-  @apply absolute grid items-center grid-cols-1 w-3/4 md:grid-cols-2 lg:grid-cols-11 lg:w-auto lg:w-3/4 z-20 md:mx-0 gap-5 lg:gap-0 flex-wrap p-5 bg-white rounded-md top-[18%] md:top-[20%]  shadow
+  @apply absolute grid items-center grid-cols-1 w-3/4 max-w-4xl md:grid-cols-2 lg:grid-cols-11 lg:w-auto lg:w-3/4 z-20 md:mx-0 gap-5 lg:gap-0 flex-wrap p-5 bg-white rounded-md top-[18%] md:top-[20%]  shadow
 }
 
 .result-item {
@@ -24,7 +24,7 @@ body {
 }
 
 .result-data {
-  @apply text-xl  font-bold text-center md:text-start
+  @apply text-lg font-bold text-center md:text-start
 }
 
 .shadow {

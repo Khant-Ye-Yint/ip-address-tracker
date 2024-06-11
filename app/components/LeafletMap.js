@@ -3,11 +3,14 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { usePositionStore } from '@/app/lib/store';
+import { usePositionStore, useResultStore } from '@/app/lib/store';
 import ChangeView from './ChangeView';
 
 const LeafletMap = () => {
   const position = usePositionStore((state) => state.position);
+  const result = useResultStore((state) => state.result);
+
+  console.log(result);
 
   const LocationIcon = new Icon({
     iconUrl: '/icons/location.png',
@@ -27,9 +30,7 @@ const LeafletMap = () => {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={position} icon={LocationIcon}>
-          <Popup>
-            {<h2>{`Latitude:${position[0]},Longitude:${position[1]}`}</h2>}
-          </Popup>
+          <Popup>{<h2>{result.location}</h2>}</Popup>
         </Marker>
         <ChangeView center={position} zoom={15} />
       </MapContainer>
